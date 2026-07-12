@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal portfolio static site — Home/Newsletter/Trips/Projects/Resume, built from Notion + GitHub at build time",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:notion": "node --env-file-if-exists=.env src/fetch-notion.js",
+    "fetch:trips": "node --env-file-if-exists=.env src/fetch-trips.js",
+    "fetch:github": "node src/fetch-github.js",
+    "build": "npm run fetch:notion && npm run fetch:trips && npm run fetch:github && node src/build.js",
+    "build:offline": "node src/build.js",
+    "serve": "python3 -m http.server --directory dist 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^5.23.0",
+    "marked": "^18.0.6",
+    "notion-to-md": "^3.1.9"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "website",
+    "description": "Personal Website",
+    "language": "",
+    "url": "https://github.com/notamrev/website",
+    "stars": 0,
+    "updatedAt": "2026-07-12T16:15:54Z"
+  },
+  {
+    "name": "jdScraper",
+    "description": "link scraper for jds",
+    "language": "Python",
+    "url": "https://github.com/notamrev/jdScraper",
+    "stars": 0,
+    "updatedAt": "2026-06-10T20:19:28Z"
+  },
+  {
+    "name": "nvim-setup",
+    "description": "Nvim and lazyvim setup for personal use",
+    "language": "Lua",
+    "url": "https://github.com/notamrev/nvim-setup",
+    "stars": 0,
+    "updatedAt": "2026-05-06T06:02:33Z"
+  },
+  {
+    "name": "birthdayPills",
+    "description": "",
+    "language": "HTML",
+    "url": "https://github.com/notamrev/birthdayPills",
+    "stars": 0,
+    "updatedAt": "2026-03-14T07:57:14Z"
+  },
+  {
+    "name": "Implementing-Raft-Logic-in-Go",
+    "description": "CC Project",
+    "language": "Go",
+    "url": "https://github.com/notamrev/Implementing-Raft-Logic-in-Go",
+    "stars": 0,
+    "updatedAt": "2023-04-20T04:01:29Z"
+  },
+  {
+    "name": "PES2UG20CS338_Jenkins",
+    "description": "",
+    "language": "Dockerfile",
+    "url": "https://github.com/notamrev/PES2UG20CS338_Jenkins",
+    "stars": 0,
+    "updatedAt": "2023-02-19T03:33:25Z"
+  }
+]

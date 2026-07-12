@@ -1,0 +1,310 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #595959;
+  --bg: #ffffff;
+  --bg-subtle: #ffffff;
+  --accent: #0000ee;
+  --border: #ccc;
+  --code-bg: #f2f2f2;
+}
+
+[data-theme="dark"] {
+  --text: #e8e8e8;
+  --muted: #a3a3a3;
+  --bg: #111111;
+  --bg-subtle: #111111;
+  --accent: #8ab4f8;
+  --border: #444;
+  --code-bg: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+header.site-header {
+  margin-bottom: 2rem;
+}
+
+header.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+header.site-header h1 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav.site-nav {
+  font-size: 0.95rem;
+}
+
+nav.site-nav a {
+  color: var(--accent);
+  margin-right: 0.75rem;
+}
+
+nav.site-nav a[aria-current="page"] {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.theme-toggle {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main {
+  min-height: 60vh;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent);
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+}
+
+.skills-list dt {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.skills-list dd {
+  margin: 0 0 0.5rem;
+}
+
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job-header .title-line {
+  display: block;
+  font-weight: bold;
+}
+
+.job-header .dates {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.job p {
+  margin: 0.5rem 0 0;
+}
+
+.job details {
+  margin-top: 0.5rem;
+}
+
+.job summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.job ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.job li {
+  margin-bottom: 0.35rem;
+}
+
+#skills-graph {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 1px solid var(--border);
+  touch-action: none;
+}
+
+.graph-legend {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin: 0 0.3em 0 0.75em;
+  vertical-align: middle;
+}
+
+.legend-dot:first-child {
+  margin-left: 0;
+}
+
+.legend-category {
+  background: #1a5fb4;
+}
+
+.legend-language {
+  background: #5b9bd9;
+}
+
+.legend-project {
+  background: #a9c4e0;
+}
+
+.legend-root {
+  background: #0d1b2a;
+}
+
+[data-theme="dark"] .legend-root {
+  background: #e8e8e8;
+}
+
+[data-theme="dark"] .legend-category {
+  background: #7aa9e0;
+}
+
+[data-theme="dark"] .legend-language {
+  background: #5588c2;
+}
+
+[data-theme="dark"] .legend-project {
+  background: #3a5a80;
+}
+
+.contact-links {
+  margin-bottom: 1.5rem;
+}
+
+.contact-links a {
+  margin-right: 1rem;
+}
+
+.post-list,
+.trip-list,
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li,
+.trip-list li,
+.project-list li {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.post-list h3,
+.trip-card-body h3,
+.project-list h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.post-meta,
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.tag::before {
+  content: "[";
+}
+
+.tag::after {
+  content: "]";
+}
+
+.post-content pre {
+  background: var(--code-bg);
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+.post-content code {
+  background: var(--code-bg);
+  padding: 0.1rem 0.3rem;
+  font-size: 0.9em;
+}
+
+.post-content pre code {
+  padding: 0;
+  background: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.trip-card a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.trip-cover {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.trip-cover-empty {
+  display: none;
+}
+
+.trip-card-body p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.trip-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0;
+}
+
+.empty-state {
+  color: var(--muted);
+  font-style: italic;
+}
+
+footer.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}

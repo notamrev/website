@@ -1,0 +1,69 @@
+{
+  "name": "Siddhant Verma",
+  "location": "Bengaluru, KA",
+  "email": "siddhantjverma@gmail.com",
+  "phone": "+91 9036839908",
+  "links": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/siddhantjverma/" },
+    { "label": "GitHub", "url": "https://github.com/notamrev" }
+  ],
+  "summary": "Forward deployed engineer building distributed, event-driven systems and cloud-native microservices in Java, Kotlin, and Spring Boot. I ship revenue-driving features end-to-end and harden data pipelines for reliability and observability across AWS and OCI, and help clients realize their goals with simple technical solutions.",
+  "experience": [
+    {
+      "company": "Sahaj AI",
+      "title": "Forward Deployed Engineer - 1",
+      "location": "Bengaluru, KA",
+      "dates": "Aug 2024 – Present",
+      "summary": "Ship revenue-driving features end-to-end on Tata Motors' Connected Vehicle Platform in Java/Kotlin and Spring Boot — including subscription-renewal work that grew revenue from ₹5L to ₹1.5 Cr/month across ~500K vehicles, a Kafka-backed telemetry pipeline processing 4K+ TPS, and a zero-downtime QLDB→PostgreSQL migration. Also restored a production EKS cluster after a full outage and cut infrastructure cost via ARM/Graviton migration.",
+      "bullets": [
+        "Built and shipped 2 subscription-renewal features end-to-end with Claude in Java/Spring Boot on Tata Motors' Connected Vehicle Platform, helping grow subscription revenue from ₹5L to ₹1.5 Cr/month across ~500K vehicles.",
+        "Built a Claude plugin specific to project requirements and service-catalog enabling developers to work with AI.",
+        "Designed and built a Kafka-backed telemetry pipeline (4K+ TPS) ingesting multi-channel data through ETL into a warehouse powering state dashboards, plus an ML service reading meter values from operator photos over tiered S3 + Glacier warehouse.",
+        "Closed an EV battery-efficiency gap affecting ~1 in 4 telemetry packets by replacing a hardcoded 0.95 constant with a model accounting for regenerative braking, correcting retarding-force and charging calculations.",
+        "Owned end-to-end backend delivery of RSUs in Kotlin/Spring Boot: zero-downtime QLDB→PostgreSQL migration, SQS-driven async letter generation, and PII data tokenization.",
+        "Restored a production EKS cluster after a full outage, cut infrastructure cost by migrating workloads to ARM/Graviton, and built Grafana/Prometheus observability dashboards."
+      ]
+    },
+    {
+      "company": "Sahaj AI",
+      "title": "Software Development Engineer Intern",
+      "location": "Bengaluru, KA",
+      "dates": "Jan 2024 – July 2024",
+      "summary": "Built on-demand, auto-provisioned infrastructure for ML model demos (Terraform, ECS Fargate, GitHub Actions), including dynamically-provisioned GPU environments — supporting ~5 deployments/week with automated teardown that eliminated idle GPU costs.",
+      "bullets": [
+        "Built on-demand infrastructure for ML model demos using Terraform, ECS Fargate, and GitHub Actions: each model upload triggered automated provisioning of an isolated environment with a public-facing domain, supporting ~5 deployments per week with automated teardown eliminating idle GPU costs.",
+        "Extended the pipeline for GPU workloads by dynamically provisioning ECS on EC2 GPU instances (g4dn), enabling compute-appropriate environments without manual intervention."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Resilient Distributed Key-Value Store",
+      "description": "12K ops/sec at P99 80–100ms; built in Go with gRPC/Protobuf, leader-based replication, and consistent hashing."
+    }
+  ],
+  "education": [
+    {
+      "school": "PES University",
+      "degree": "B.Tech. Computer Science and Engineering (Machine Learning and Data Science)",
+      "detail": "C.N.R Rao Merit Scholarship — top 20% by SGPA, 40% tuition refund (Sem 7 & 8)."
+    }
+  ],
+  "skills": [
+    { "category": "Backend & Frameworks", "items": ["Spring Boot", "Spring", "Hibernate (JPA)", "REST", "gRPC", "Protobuf", "Microservices", "Kafka"] },
+    { "category": "Languages", "items": ["Java", "Kotlin", "Go", "Python", "TypeScript (React, PrimeReact)"] },
+    { "category": "Testing & API Tooling", "items": ["JUnit", "Mockito", "Swagger", "Postman"] },
+    { "category": "Infrastructure", "items": ["AWS (EKS, S3, Glacier)", "OCI", "Terraform", "Docker", "Kubernetes", "CI/CD (Jenkins, GitHub CI)", "ArgoCD"] },
+    { "category": "Datastores", "items": ["PostgreSQL", "Oracle", "Cassandra", "QLDB"] },
+    { "category": "Observability & Security", "items": ["Grafana", "Prometheus", "EFK", "SLOs", "Alerting", "OAuth2", "RBAC", "Keycloak", "PII tokenization"] }
+  ],
+  "additional": {
+    "awards": [
+      "Runner-up, Hacktoberfest 2021 (PESU Hackerspace) — built an education-gamification platform."
+    ],
+    "publications": [
+      "Second-hand price prediction — 93% accuracy end-to-end ML pipeline, published as an IEEE paper."
+    ]
+  },
+  "resumeUrl": "https://drive.google.com/file/d/15kf2fxSU7Fisvsjb0doxYaScZ8-i_sxG/view?usp=sharing"
+}
