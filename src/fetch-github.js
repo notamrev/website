@@ -5,6 +5,10 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const OUTPUT_FILE = path.join(ROOT, "data", "projects.json");
 const GITHUB_USERNAME = "notamrev";
+// Only repos tagged with this GitHub topic show up on the Projects page —
+// being public isn't enough on its own. Add the topic via a repo's page on
+// GitHub: "..." menu / gear icon next to "About" -> Topics.
+const PORTFOLIO_TOPIC = "portfolio";
 
 function warn(message) {
   console.warn(`[fetch-github] ${message}`);
@@ -47,7 +51,7 @@ async function main() {
   const repos = await response.json();
 
   const projects = repos
-    .filter((repo) => !repo.fork)
+    .filter((repo) => !repo.fork && (repo.topics ?? []).includes(PORTFOLIO_TOPIC))
     .map((repo) => ({
       name: repo.name,
       description: repo.description ?? "",
@@ -59,7 +63,11 @@ async function main() {
     .sort((a, b) => b.stars - a.stars || new Date(b.updatedAt) - new Date(a.updatedAt));
 
   writeOutput(projects);
-  console.log(`[fetch-github] Synced ${projects.length} project${projects.length === 1 ? "" : "s"} for ${GITHUB_USERNAME}.`);
+  const untaggedCount = repos.filter((r) => !r.fork).length - projects.length;
+  console.log(
+    `[fetch-github] Synced ${projects.length} project${projects.length === 1 ? "" : "s"} for ${GITHUB_USERNAME} ` +
+      `(tagged "${PORTFOLIO_TOPIC}"). ${untaggedCount} other public repo${untaggedCount === 1 ? "" : "s"} skipped — add the "${PORTFOLIO_TOPIC}" topic on GitHub to feature them.`
+  );
 }
 
 await main();
