@@ -85,14 +85,14 @@ Set up a second database for Trips, using the **same integration** (no need to c
    ```
 4. Run `npm run build` — the first run will download every photo, which can take a bit for trips with lots of images; subsequent runs only download new ones.
 
-## Deploying (not done yet — reference for later)
+## Deploying
 
-A workflow is already scaffolded at `.github/workflows/deploy.yml` (build + deploy to GitHub Pages on push to `main`, or manually via "Run workflow"). It's not enabled yet. When you're ready:
+Live at https://notamrev.github.io/website/, via `.github/workflows/deploy.yml`. It builds and deploys to GitHub Pages on:
+- every push to `main`,
+- manually via the Actions tab → "Run workflow", or
+- a weekly schedule (Sunday 11:30 PM IST) — so new Notion content or newly-tagged `portfolio` repos go live even without a code change that week.
 
-1. Push this repo to GitHub.
-2. Add `NOTION_TOKEN`, `NOTION_DATABASE_ID`, and `NOTION_TRIPS_DATABASE_ID` as repo secrets: Settings → Secrets and variables → Actions → New repository secret.
-3. Enable Pages: Settings → Pages → Source: **GitHub Actions**.
-4. Push to `main` (or trigger the workflow manually) — once it succeeds, the site is live at `https://notamrev.github.io/<repo-name>/`.
+Repo secrets (`NOTION_TOKEN`, `NOTION_DATABASE_ID`, `NOTION_TRIPS_DATABASE_ID`) and Pages (Settings → Pages → Source: GitHub Actions) are already configured. Rotating a token or database ID just means updating the repo secret under Settings → Secrets and variables → Actions.
 
 ### Cheap custom domain
 

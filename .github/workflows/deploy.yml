@@ -1,11 +1,14 @@
-# Scaffolded for later use — see README.md "Deploying" section before
-# enabling Pages / pushing to main. Not wired up or tested yet.
 name: Build and deploy site
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # 18:00 UTC Sunday = 11:30 PM IST Sunday — rebuilds/republishes weekly
+    # even with no code changes, so new Notion/GitHub content goes live
+    # without needing a manual push.
+    - cron: "0 18 * * 0"
 
 permissions:
   contents: read
