@@ -27,7 +27,7 @@ export function renderHome(resume, projects) {
     : "";
 
   return `<h2>${escapeHtml(resume.name)}</h2>
-    <p class="summary">${escapeHtml(resume.summary)}</p>
+    <p class="summary">${escapeHtml(resume.bio)}</p>
 
     ${graphSection}`;
 }

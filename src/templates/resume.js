@@ -56,6 +56,11 @@ export function renderResume(resume) {
     </p>
 
     <section class="section">
+      <h2>Overview</h2>
+      <p>${escapeHtml(resume.summary)}</p>
+    </section>
+
+    <section class="section">
       <h2>Work Experience</h2>
       ${experienceHtml}
     </section>
