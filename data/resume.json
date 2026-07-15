@@ -7,7 +7,11 @@
     { "label": "LinkedIn", "url": "https://www.linkedin.com/in/siddhantjverma/" },
     { "label": "GitHub", "url": "https://github.com/notamrev" }
   ],
-  "bio": "Grew up in Piscataway, New Jersey, went to school at NPS Yelahanka and college at PES University Electronic City, and now call Bangalore home. I'm introverted and keep a small circle, but get me talking about something I care about — motorcycles, aviation documentaries, whatever research paper I fell into that week — and I won't stop. Weekends go to saxophone, competitive gaming, football, rock climbing, or trekking somewhere with a camera. I cook, do bodyweight calisthenics instead of chasing gym numbers, and I'm a sucker for new tech and hardware.",
+  "bio": [
+    "I grew up in Piscataway, New Jersey, did my schooling at NPS Yelahanka and college at PES in Electronic City, and somewhere along the way, Bangalore quietly became home.",
+    "I'll be honest: I'm the quiet one in most rooms. Small circle, happy to listen. But ask me about motorcycles, or the aviation documentary I watched at 1 a.m., or whatever research paper I accidentally fell into that week, and suddenly I'm the guy who won't stop talking. Consider yourself warned.",
+    "Weekends are sacred. They go to my saxophone, a bit of competitive gaming, football with friends, climbing walls, or disappearing on a trek with my camera and coming back with way too many photos. I cook (actually cook, not just survive), I've traded chasing gym numbers for calisthenics, and if there's a shiny new gadget out there, chances are I've already read three reviews and talked myself into wanting it."
+  ],
   "summary": "Forward deployed engineer building distributed, event-driven systems and cloud-native microservices in Java, Kotlin, and Spring Boot. I ship revenue-driving features end-to-end and harden data pipelines for reliability and observability across AWS and OCI, and help clients realize their goals with simple technical solutions.",
   "experience": [
     {

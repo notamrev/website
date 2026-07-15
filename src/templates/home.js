@@ -26,8 +26,12 @@ export function renderHome(resume, projects) {
     </section>`
     : "";
 
+  const bioParagraphs = (Array.isArray(resume.bio) ? resume.bio : [resume.bio])
+    .map((paragraph) => `<p class="summary">${escapeHtml(paragraph)}</p>`)
+    .join("\n    ");
+
   return `<h2>${escapeHtml(resume.name)}</h2>
-    <p class="summary">${escapeHtml(resume.bio)}</p>
+    ${bioParagraphs}
 
     ${graphSection}`;
 }
