@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": "39e305fa-7317-80fc-a009-c8e8f1fff208",
+    "slug": "dayara-bugyal",
+    "title": "Dayara Bugyal ",
+    "type": "Trip",
+    "date": "2026-07-15T13:56:00.000Z",
+    "location": "",
+    "summary": "",
+    "coverImage": "assets/trips/dayara-bugyal/1.jpg",
+    "contentHtml": "<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/1.jpg\" alt=\"IMG_5776.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/2.jpeg\" alt=\"FullSizeRender_%2869%29.jpeg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/3.jpeg\" alt=\"IMG_1022.jpeg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/4.jpeg\" alt=\"IMG_1280.jpeg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/5.jpeg\" alt=\"IMG_0662.jpeg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/6.jpeg\" alt=\"IMG_3259_%281%29.jpeg\"></p>\n<p><a href=\"\">embed</a></p>\n<p><img src=\"__ASSET_BASE__assets/trips/dayara-bugyal/7.jpg\" alt=\"IMG_4814.jpg\"></p>\n"
+  },
+  {
+    "id": "39e305fa-7317-807d-92a7-e24ee525f0de",
+    "slug": "thailand",
+    "title": "Thailand",
+    "type": "Trip",
+    "date": "2026-07-15T13:56:00.000Z",
+    "location": "",
+    "summary": "",
+    "coverImage": "assets/trips/thailand/1.jpg",
+    "contentHtml": "<p><img src=\"__ASSET_BASE__assets/trips/thailand/1.jpg\" alt=\"IMG_4553.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/2.jpg\" alt=\"34743fb6-addb-455f-8c8e-daea7a5cba47.png\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/3.jpg\" alt=\"33D098D6-2DE1-428B-9251-95D9B2880072.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/4.jpg\" alt=\"54B46A45-D28F-419B-B439-35AE44CD5F93.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/5.jpg\" alt=\"IMG_4467.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/6.jpg\" alt=\"2FDF223C-C41C-4AF3-B953-72452493F0B7.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/7.jpg\" alt=\"IMG_4457.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/8.jpg\" alt=\"IMG_4417.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/9.jpg\" alt=\"IMG_4427.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/10.jpg\" alt=\"IMG_4511.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/11.jpg\" alt=\"IMG_4553.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/thailand/12.jpg\" alt=\"61B26574-4EDA-4716-BD19-4F6D9E0A3B61.jpg\"></p>\n"
+  },
+  {
+    "id": "39e305fa-7317-80a4-b3b9-df5f88cd978a",
+    "slug": "pangarchulla",
+    "title": "Pangarchulla",
+    "type": "Trip",
+    "date": "2026-07-15T13:56:00.000Z",
+    "location": "",
+    "summary": "",
+    "coverImage": "assets/trips/pangarchulla/1.jpg",
+    "contentHtml": "<p><a href=\"\">embed</a></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/1.jpg\" alt=\"IMG_2142.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/2.jpg\" alt=\"IMG_2130_Copy.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/3.jpg\" alt=\"IMG_1957.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/4.jpg\" alt=\"IMG_1834.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/5.jpeg\" alt=\"IMG_0225.jpeg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/6.jpg\" alt=\"E8787934-B7A3-4855-A68E-7FAAD79EBCC3.jpg\"></p>\n<p><img src=\"__ASSET_BASE__assets/trips/pangarchulla/7.jpg\" alt=\"367e11f9-47fe-43b1-9551-d989e256551b_%281%29.jpg\"></p>\n"
+  }
+]
