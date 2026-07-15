@@ -44,7 +44,7 @@ function main() {
   writeFile(
     path.join(DIST_DIR, "index.html"),
     renderLayout({
-      title: `${resume.name} — Home`,
+      title: resume.name,
       base: "",
       activeNav: "home",
       bodyHtml: renderHome(resume, projects),
@@ -65,7 +65,7 @@ function main() {
     writeFile(
       path.join(DIST_DIR, "newsletter", `${post.slug}.html`),
       renderLayout({
-        title: `${post.title} — Newsletter`,
+        title: `${post.title} — Newsletter — ${resume.name}`,
         base: "../",
         activeNav: "newsletter",
         bodyHtml: renderNewsletterPost(post),
@@ -84,13 +84,13 @@ function main() {
     })
   );
 
-  // Resume (for recruiters)
+  // About Me (recruiter-facing: links, overview, skills, experience)
   writeFile(
     path.join(DIST_DIR, "resume", "index.html"),
     renderLayout({
-      title: `Resume — ${resume.name}`,
+      title: `About Me — ${resume.name}`,
       base: "../",
-      activeNav: "resume",
+      activeNav: "about",
       bodyHtml: renderResume(resume),
     })
   );
@@ -109,7 +109,7 @@ function main() {
     writeFile(
       path.join(DIST_DIR, "trips", `${trip.slug}.html`),
       renderLayout({
-        title: `${trip.title} — Trips`,
+        title: `${trip.title} — Trips — ${resume.name}`,
         base: "../",
         activeNav: "trips",
         bodyHtml: renderTripPost(trip, "../"),
@@ -121,6 +121,7 @@ function main() {
   fs.copyFileSync(path.join(PUBLIC_DIR, "styles.css"), path.join(DIST_DIR, "styles.css"));
   fs.copyFileSync(path.join(PUBLIC_DIR, "graph.js"), path.join(DIST_DIR, "graph.js"));
   fs.copyFileSync(path.join(PUBLIC_DIR, "theme.js"), path.join(DIST_DIR, "theme.js"));
+  fs.copyFileSync(path.join(PUBLIC_DIR, "favicon.svg"), path.join(DIST_DIR, "favicon.svg"));
   const tripImagesSource = path.join(DATA_DIR, "trip-images");
   if (fs.existsSync(tripImagesSource)) {
     fs.cpSync(tripImagesSource, path.join(DIST_DIR, "assets", "trips"), { recursive: true });

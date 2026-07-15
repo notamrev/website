@@ -50,7 +50,7 @@ export function renderResume(resume) {
     .map((p) => `<li>${escapeHtml(p)}</li>`)
     .join("\n      ");
 
-  return `<h2>Resume</h2>
+  return `<h2>About Me</h2>
     <p class="contact-links">
     ${contactLinks}
     </p>

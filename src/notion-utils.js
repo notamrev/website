@@ -15,7 +15,7 @@ export function slugify(text) {
 }
 
 export function plainTextFrom(richTextArray) {
-  return (richTextArray || []).map((t) => t.plain_text).join("");
+  return (richTextArray || []).map((t) => t.plain_text).join("").trim();
 }
 
 // Finds a database property by trying candidate names first (case-insensitive),

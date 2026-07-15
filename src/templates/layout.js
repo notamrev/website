@@ -5,7 +5,7 @@ const NAV_ITEMS = [
   { key: "newsletter", label: "Newsletter", href: "newsletter/index.html" },
   { key: "trips", label: "Trips", href: "trips/index.html" },
   { key: "projects", label: "Projects", href: "projects/index.html" },
-  { key: "resume", label: "Resume", href: "resume/index.html" },
+  { key: "about", label: "About Me", href: "resume/index.html" },
 ];
 
 // `base` is the relative path back to the dist/ root: "" for root-level
@@ -25,6 +25,7 @@ export function renderLayout({ title, base, activeNav, bodyHtml }) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(title)}</title>
+  <link rel="icon" type="image/svg+xml" href="${base}favicon.svg">
   <link rel="stylesheet" href="${base}styles.css">
   <script>
     (function () {
