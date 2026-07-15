@@ -48,6 +48,7 @@ function main() {
       base: "",
       activeNav: "home",
       bodyHtml: renderHome(resume, projects),
+      name: resume.name,
     })
   );
 
@@ -59,6 +60,7 @@ function main() {
       base: "../",
       activeNav: "newsletter",
       bodyHtml: renderNewsletterIndex(newsletterPosts),
+      name: resume.name,
     })
   );
   for (const post of newsletterPosts) {
@@ -69,6 +71,7 @@ function main() {
         base: "../",
         activeNav: "newsletter",
         bodyHtml: renderNewsletterPost(post),
+        name: resume.name,
       })
     );
   }
@@ -81,6 +84,7 @@ function main() {
       base: "../",
       activeNav: "projects",
       bodyHtml: renderProjects(projects),
+      name: resume.name,
     })
   );
 
@@ -92,6 +96,7 @@ function main() {
       base: "../",
       activeNav: "about",
       bodyHtml: renderResume(resume),
+      name: resume.name,
     })
   );
 
@@ -103,6 +108,7 @@ function main() {
       base: "../",
       activeNav: "trips",
       bodyHtml: renderTripsIndex(trips, "../"),
+      name: resume.name,
     })
   );
   for (const trip of trips) {
@@ -113,6 +119,7 @@ function main() {
         base: "../",
         activeNav: "trips",
         bodyHtml: renderTripPost(trip, "../"),
+        name: resume.name,
       })
     );
   }

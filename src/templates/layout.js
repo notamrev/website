@@ -13,11 +13,14 @@ const NAV_ITEMS = [
 // trips/*, projects/index.html, resume/index.html). All internal links are
 // built from it so the same template works regardless of where the page
 // ends up on disk.
-export function renderLayout({ title, base, activeNav, bodyHtml }) {
+export function renderLayout({ title, base, activeNav, bodyHtml, name }) {
   const navHtml = NAV_ITEMS.map((item) => {
     const current = item.key === activeNav ? ' aria-current="page"' : "";
     return `<a href="${base}${item.href}"${current}>${escapeHtml(item.label)}</a>`;
   }).join(" ·\n      ");
+
+  const isHome = activeNav === "home";
+  const footerName = isHome ? "" : `${escapeHtml(name)} · `;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -37,7 +40,6 @@ export function renderLayout({ title, base, activeNav, bodyHtml }) {
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="${base}index.html">Siddhant Verma</a></h1>
     <nav class="site-nav">
       ${navHtml} ·
       <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">dark</button>
@@ -47,7 +49,7 @@ export function renderLayout({ title, base, activeNav, bodyHtml }) {
 ${bodyHtml}
   </main>
   <footer class="site-footer">
-    Built with node and my notion databases.
+    ${footerName}Built with node and my notion databases.
   </footer>
   <script src="${base}theme.js" defer></script>
 </body>

@@ -37,16 +37,6 @@ header.site-header {
   margin-bottom: 2rem;
 }
 
-header.site-header h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.4rem;
-}
-
-header.site-header h1 a {
-  color: var(--text);
-  text-decoration: none;
-}
-
 nav.site-nav {
   font-size: 0.95rem;
 }
