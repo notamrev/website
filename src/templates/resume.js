@@ -17,13 +17,6 @@ export function renderResume(resume) {
     )
     .join("\n      ");
 
-  const skillsHtml = resume.skills
-    .map(
-      (group) =>
-        `<dt>${escapeHtml(group.category)}</dt>\n      <dd>${group.items.map(escapeHtml).join(", ")}</dd>`
-    )
-    .join("\n      ");
-
   const experienceHtml = resume.experience
     .map((job) => {
       const narrativeParagraphs = Array.isArray(job.narrative) ? job.narrative : [job.summary];
@@ -34,12 +27,6 @@ export function renderResume(resume) {
           <span class="dates">${escapeHtml(job.dates)}</span>
         </div>
         ${narrativeHtml}
-        <details>
-          <summary>Full details</summary>
-          <ul>
-            ${job.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join("\n            ")}
-          </ul>
-        </details>
       </div>`;
     })
     .join("\n      ");
@@ -94,13 +81,6 @@ export function renderResume(resume) {
       <ul>
       ${educationHtml}
       </ul>
-    </section>
-
-    <section class="section">
-      <h2>Skills</h2>
-      <dl class="skills-list">
-      ${skillsHtml}
-      </dl>
     </section>
 
     <section class="section">

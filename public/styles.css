@@ -89,15 +89,6 @@ a {
   font-size: 1.2rem;
 }
 
-.skills-list dt {
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.skills-list dd {
-  margin: 0 0 0.5rem;
-}
-
 .job {
   margin-bottom: 1.5rem;
 }
@@ -115,24 +106,6 @@ a {
 
 .job p {
   margin: 0.5rem 0 0;
-}
-
-.job details {
-  margin-top: 0.5rem;
-}
-
-.job summary {
-  cursor: pointer;
-  color: var(--accent);
-}
-
-.job ul {
-  margin: 0.5rem 0 0;
-  padding-left: 1.25rem;
-}
-
-.job li {
-  margin-bottom: 0.35rem;
 }
 
 .resume-links {
