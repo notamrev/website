@@ -135,6 +135,25 @@ a {
   margin-bottom: 0.35rem;
 }
 
+.resume-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-links li {
+  margin-bottom: 1rem;
+}
+
+.resume-links a {
+  font-weight: bold;
+}
+
+.resume-links p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
 #skills-graph {
   display: block;
   width: 100%;

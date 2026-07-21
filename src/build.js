@@ -129,6 +129,10 @@ function main() {
   fs.copyFileSync(path.join(PUBLIC_DIR, "graph.js"), path.join(DIST_DIR, "graph.js"));
   fs.copyFileSync(path.join(PUBLIC_DIR, "theme.js"), path.join(DIST_DIR, "theme.js"));
   fs.copyFileSync(path.join(PUBLIC_DIR, "favicon.svg"), path.join(DIST_DIR, "favicon.svg"));
+  const resumeFilesSource = path.join(PUBLIC_DIR, "resume");
+  if (fs.existsSync(resumeFilesSource)) {
+    fs.cpSync(resumeFilesSource, path.join(DIST_DIR, "resume"), { recursive: true });
+  }
   const tripImagesSource = path.join(DATA_DIR, "trip-images");
   if (fs.existsSync(tripImagesSource)) {
     fs.cpSync(tripImagesSource, path.join(DIST_DIR, "assets", "trips"), { recursive: true });
