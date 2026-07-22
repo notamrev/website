@@ -12,7 +12,7 @@
     "I'll be honest: I'm the quiet one in most rooms. Small circle, happy to listen. But ask me about motorcycles, or the aviation documentary I watched at 1 a.m., or whatever research paper I accidentally fell into that week, and suddenly I'm the guy who won't stop talking. Consider yourself warned.",
     "Weekends are sacred. They go to my saxophone, a bit of competitive gaming, football with friends, climbing walls, or disappearing on a trek with my camera and coming back with way too many photos. I cook (actually cook, not just survive), I've traded chasing gym numbers for calisthenics, and if there's a shiny new gadget out there, chances are I've already read three reviews and talked myself into wanting it."
   ],
-  "summary": "I write backend systems for a living, and somewhere along the way ended up doing a lot of the on-call/infrastructure work too. So I keep two versions of my résumé, and which one's relevant depends on what you're hiring for. The backend one is about shipping features end to end: Java, Kotlin, Go, Spring Boot, distributed systems, the kind of work where the win is a number going up on a dashboard. The SRE one is about the 2 a.m. version of me: Kubernetes, GitOps, incident response, keeping the lights on and the AWS bill down. Both describe the same stretch at Sahaj AI, just through a different lens. Grab whichever matches the role, or both for the full picture.",
+  "summary": "I write backend systems for a living, and somewhere along the way ended up doing a lot of the on-call/infrastructure work too. So I keep two versions of my résumé, and which one's relevant depends on what you're hiring for. The backend one is about shipping features end to end: Java, Kotlin, Go, Spring Boot, distributed systems, the kind of work where the win is a number going up on a dashboard. The SRE one is about the 2 a.m. version of me: Kubernetes, GitOps, incident response, keeping the lights on and the AWS bill down. Both describe the same stretch at Sahaj Software, just through a different lens. Grab whichever matches the role, or both for the full picture.",
   "resumes": [
     {
       "label": "Backend / Product Engineering",
@@ -27,7 +27,7 @@
   ],
   "experience": [
     {
-      "company": "Sahaj AI",
+      "company": "Sahaj Software",
       "title": "Software Engineer II",
       "location": "Bengaluru, KA",
       "dates": "Aug 2024 – Present",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "company": "Sahaj AI",
+      "company": "Sahaj Software",
       "title": "Software Engineer I",
       "location": "Bengaluru, KA",
       "dates": "Jan 2024 – July 2024",
